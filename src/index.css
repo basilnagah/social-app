@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
+@theme{
+    --color-mainColor:#1c64f2;
+}
+
+
+@utility container{
+    margin:auto;
+
+        @media (width >= 96rem ) {
+        max-width: 85rem;
+    }
+}
+
+
+
+@layer components{
+    .input{
+        @apply bg-white w-full my-4 py-2 px-3 rounded-md focus:outline-mainColor
+    }
+    .btn{
+        @apply bg-mainColor text-white px-4 py-2 rounded-md hover:bg-white hover:text-mainColor hover:outline-2 hover:outline-mainColor cursor-pointer transition-all
+    }
+}
