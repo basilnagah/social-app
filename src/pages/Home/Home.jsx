@@ -70,7 +70,7 @@ export default function Home() {
 
 
         <div className='flex justify-between items-center'>
-          <button className='btn'>prev</button>
+          <button className='btn'>ayhagaa</button>
           <button onClick={handleNextPage} className='btn'>next</button>
         </div>
       </div>
